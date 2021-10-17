@@ -1,0 +1,235 @@
+<!-- Created by Siddhi Malviya -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Shop</title>
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="text-center text-white" >
+            <img src="https://pratheesh-s.github.io/checkOutForm/images/company[1].svg" alt="company" class="img-fluid" style="width: 10rem;height: 10rem;margin-top:3rem;">
+            <h1 class="font-style-bold h4 mt-2">Checkout</h1>
+        </div>
+        <div class="row text-white">
+            <div class="col-md-7 col-sm-12 col-lg-7 p-10 " style="background-color: rgb(248, 245, 250);">
+                <h3 class="mt-4" style="color:black">Your Information:</h3>
+                <form>
+                    <div class="form-row" style="color: black;">
+                        <div class="col">
+                             <div class="form-group">
+                             <label for="Name" >Name </label>
+                             <input type="text" placeholder="Name" class="form-control bg-light text-dark">
+                            </div>
+                        </div>
+                     <div class="col">
+                        <div class="form-group ">
+                            <label for="Name">Last Name </label>
+                            <input type="text" placeholder="Last Name" class="form-control bg-light text-dark">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text text-white bg-danger">@</span>
+                    </div>
+                    <input type="text" placeholder="User Name" class="form-control bg-light text-dark">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="email" style="color: black;">Email<span class="text-muted">(optional)</span></label>
+                    <input type="email" class="form-control bg-light text-dark"placeholder="abc@gmail.com">
+                    
+                    
+                </div>
+                <div class="form-group">
+                    <label for="address" style="color: black;">Address</label>
+                    <input type="text" class="form-control bg-light text-dark"placeholder="1234 main">
+                </div>
+                <div class="form-group">
+                    <label for="address" style="color: black;">Address 2<span class="text-muted">(optional)</span></label>
+                    <input type="text" class="form-control bg-light text-dark"placeholder="apartment">    
+                </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="country" style="color: black;">Country:</label>
+                                <select name="county" id="country" class="bg-light text-dark d-block">
+                                    <option>choose</option>
+                                    <option>india</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="state" style="color: black;">State:</label>
+                                <select name="st" id="st" class="bg-light text-dark d-block">
+                                    <option>choose</option>
+                                    <option>Karnataka</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                  <label for="zip" style="color: black;">Zip:</label>
+                                  <input type="text" class="form-control bg-light text-dark">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-5">
+                    <div class="form-check align-center justify-content">
+                        <input type="checkbox" class="form-check-input ">
+                        <label for="check" class="form-check-label "><span style="color: black;">Shipping Address same as my billing address </span></label>
+                   
+                    </div>
+                    <div class="form-check align-center justify-content">
+                        <input type="checkbox" class="form-check-input text-primary ">
+                        <label for="check" class="form-check-label "><span style="color: black;">Shipping Address same as my billing address </span></label>
+                   
+                    </div>
+                    <div class="form-group  text-primary">
+                        <h4 class="mt-3 text-dark">Payment Information:</h4>
+                        <input type="radio" name="radio" >
+                        <label for="radio" >Credit Card</label><br>
+                        <input type="radio"  name="radio">
+                        <label for="radio" >Debit card</label><br>
+                        <input type="radio"  name="radio">
+                        <label for="radio" >Paypal</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="col mr-3">
+                            <label for="card" style="color: black;">Name on card :</label>
+                            <input type="text" class="form-control bg-light text-dark" placeholder="name">
+                        </div>
+                        <div class="col">
+                            <label for="card" style="color: black;">Card number :</label>
+                            <input type="number" class="form-control bg-light text-dark" placeholder="card number">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="col mr-3">
+                                    <label for="card" style="color: black;">Expiration:</label>
+                                    <input type="number" class="form-control bg-light text-dark" placeholder="mm/yyyy">
+                                </div>
+                                <div class="col">
+                                    <label for="card">Cvv</label>
+                                    <input type="number" class="form-control bg-light text-dark" placeholder="cvv">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-10 mt-4">
+                        <button class="btn btn-primary text-white btn-block">Continue And Pay -></button>
+                    </div>
+               
+            </form>
+           
+        </div>
+      
+         <div class="col-md-5 col-lg-5 col-sm-12 " style="background-color: rgba(242, 236, 243, 0.959);">
+               <div class="row mt-3 ">
+                   <div class="col-8">
+                      <h3 class="text-dark ">Booking Summary</h3>
+                   </div>
+                   <div class="col-4">
+                       <h2 class="badge badge-pill badge-primary text-right ">5</h2>
+                   </div>
+               </div>
+               <ol class="list-group text-dark">
+                   <li class="list-group-item">
+                       <div class="row">
+                           <div class="col-md-8">
+                               <h4>Product name</h4>
+                               <small class="text-muted">Brief description</small>
+                           </div>
+                           <div class="col-md-4">
+                               <h4>$12</h4>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Second Product</h4>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>$18</h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Third product</h4>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>$10</h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row text-success">
+                        <div class="col-md-8">
+                            <h4>Third product</h4>
+                            <small >Example code</small>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>$5</h4>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Total (USD)</h4>
+                            <small class="text-muted">Brief description</small>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="font-bold">$35</h4>
+                        </div>
+                    </div>
+                </li>
+           </ol>   
+       
+        <div class="mt-3">
+               <div class="input-group">
+                   <input type="text" class="form-control" placeholder="promo code">
+              
+                    <div class="input-group-append">
+                   
+                    <span role="button" class="btn btn-primary btn-sm">Redeem</span>
+               </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="mt-6 bg-light" style="margin-top: 4rem; padding: 2rem 0;">
+        <h6 class="text-muted text-center"><span>&copy;</span>@ Hiko-<b>2022</b></h5>
+            <h5 class="text-primary text-center"><span >Privacy</span><span class="ml-4">Terms</span><span class="ml-4">Support</span></h5>
+            
+    </footer>
+</div>
+
+
+
+
+
+    
+    <!-- java script -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="java-script/script.js" ></script>
+</body>
+</html>
